@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1.3rem);
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 2rem;
+    width: 90%;
+    max-width: 70rem;
+    margin-inline: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#searchInput {
+    padding: 0.5rem;
+    display: flex;
+    flex: 2.5;
+    border: none;
+    border-radius: 10px;
+}
+
+#searchInput:focus {
+    outline: none;
+    border: 1px solid rgba(133, 133, 245, 0.322);
+    box-shadow: 0 0 0 3px rgba(133, 133, 245, 0.05);
+}
+
+#allGenre {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    flex: 0.5;
+}
+
+#allGenre Option {
+    background-color: #fff;
+    color: blue;
+    padding: 0.8rem;
+
+}
+
+#allGenre:focus {
+    outline: none;
+    border: 1px solid rgba(82, 82, 241, 0.473);
+    box-shadow: 0 0 0 3px rgba(133, 133, 245, 0.05);
+}
+
+.film-card img {
+    width: 50%;
+    height: 9rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    gap: 1rem;
+    display: block;
+    margin-inline: auto;
+}
+
+.film-card {
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 300;
+    background-color: bisque;
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 1rem;
+    color: rgb(101, 89, 218);
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
+}
+
+#movieList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(203, 248, 248, 0.692);
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.film-card button {
+    border: none;
+    background-color: rgba(163, 250, 250, 0.247);
+    padding: 0.5rem;
+    color: #fc4949f6;
+    border-radius: 10px;
+}
+
+@media (max-width: 360px) {
+    #movieList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

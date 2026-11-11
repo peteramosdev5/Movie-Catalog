@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Peter Amos">
+    <meta name="description" content="My Movie Catalogue">
+    <title>Movie Web</title>
+    <link rel="stylesheet" href="movies.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <input type="text" id="searchInput" placeholder="Search movies">
+            <select name="genre" id="allGenre">
+                <option value="all">All</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+            </select>
+        </header>
+       <section id="movieList"></section>
+    </div>
+    <script src="movies.js"></script>
+</body>
+</html>
